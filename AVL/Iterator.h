@@ -1,5 +1,3 @@
-#pragma once
-
 #include "Tree.h"
 
 class Iterator {

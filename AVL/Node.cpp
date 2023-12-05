@@ -1,16 +1,16 @@
 #include "Node.h"
 
 Node::Node() {
-  data = 0;
-  left = nullptr;
-  right = nullptr;
-  parent = nullptr;
-  height = 1;
+	data = 0;
+	left = nullptr;
+	right = nullptr;
+	parent = nullptr;
+	height = 1;
 }
 
 Node::Node(int data) {
-  this->data = data;
-  left = nullptr;
-  right = nullptr;
-  parent = nullptr;
+	this->data = data;
+	left = nullptr;
+	right = nullptr;
+	parent = nullptr;
 }
