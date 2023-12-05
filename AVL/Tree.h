@@ -4,7 +4,7 @@
 #include <iterator>
 #include <cstddef>
 #include "Node.h"
-#include "Iterator.h"
+//#include "Iterator.h"
 
 
 class Tree {
@@ -26,8 +26,8 @@ private:
     void inorder(Node* t);
 
 public:
-    Iterator begin() noexcept { return Iterator(findMin(root)); }
-    Iterator end() noexcept { return Iterator(nullptr); }
+    //Iterator begin() noexcept { return Iterator(findMin(root)); }
+    //Iterator end() noexcept { return Iterator(nullptr); }
 
     Tree();
     void insert(int x);

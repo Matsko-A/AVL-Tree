@@ -184,9 +184,9 @@ bool Tree::find(int x) {
     return find(x, root);
 }
 
-Node* Tree::getRoot() {
+/*Node* Tree::getRoot() {
     return root;
-}
+}*/
 
 void Tree::del() {
     makeEmpty(root);

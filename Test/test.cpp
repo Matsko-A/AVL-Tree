@@ -1,5 +1,5 @@
 #include "pch.h"
-#include"../AVL/tree.h"
+#include"../AVL/tree.cpp"
 
 TEST(test, DefaultConstructorTest) {
 	Tree t = Tree();
