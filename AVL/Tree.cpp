@@ -178,6 +178,6 @@ bool Tree::find(int x) {
 
 std::ostream& operator<<(std::ostream& os, const Node& node) {
     if (node.data == 0)
-        return os << "Ïóñòî";
+        return os << "ÐŸÑƒÑÑ‚Ð¾";
     return os << node.data << " ";
 }
