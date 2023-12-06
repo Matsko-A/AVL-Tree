@@ -25,14 +25,14 @@ int main() {
 }
 
 void menu(int command, int i, Tree &t) {
-    std::cout << "\t\t\tÌåíþ" << std::endl;
-    std::cout << "1. Äîáàâèòü âåðøèíó." << std::endl;
-    std::cout << "2. Óäàëèòü âåðøèíó." << std::endl;
-    std::cout << "3. Âûâåñòè âåðøèíû." << std::endl;
-    std::cout << "4. Î÷èñòèòü äåðåâî." << std::endl;
-    std::cout << "5. Çàêðûòü ïðîãðàììó." << std::endl;
+    std::cout << "\t\t\tÐœÐµÐ½ÑŽ" << std::endl;
+    std::cout << "1. Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð²ÐµÑ€ÑˆÐ¸Ð½Ñƒ." << std::endl;
+    std::cout << "2. Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð²ÐµÑ€ÑˆÐ¸Ð½Ñƒ." << std::endl;
+    std::cout << "3. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÐµÑ€ÑˆÐ¸Ð½Ñ‹." << std::endl;
+    std::cout << "4. ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð´ÐµÑ€ÐµÐ²Ð¾." << std::endl;
+    std::cout << "5. Ð—Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñƒ." << std::endl;
     std::cout << std::endl;
-    std::cout << "Êîìàíäû: ";
+    std::cout << "ÐšÐ¾Ð¼Ð°Ð½Ð´Ñ‹: ";
     std::cout << "INSERT=1; ";
     std::cout << "REMOVE=2; ";
     std::cout << "DISPLAY=3; ";
@@ -40,23 +40,23 @@ void menu(int command, int i, Tree &t) {
     std::cout << "EXIT=0" << std::endl;
     std::cout << std::endl;
 
-    std::cout << "Ââåäèòå êîìàíäó: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ: ";
     std::cin >> command;
     switch (command) {
     case INSERT:
-        std::cout << "Ââåäèòå çíà÷åíèÿ óçëà: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÑƒÐ·Ð»Ð°: ";
         std::cin >> i;
         t.insert(i);
         std::cout << std::endl;
         break;
     case REMOVE:
-        std::cout << "Ââåäèòå çíà÷åíèÿ óçëà: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÑƒÐ·Ð»Ð°: ";
         std::cin >> i;
         t.remove(i);
         std::cout << std::endl;
         break;
     case DISPLAY:
-        std::cout << "Óïîðÿäî÷åííûå óçëû: ";
+        std::cout << "Ð£Ð¿Ð¾Ñ€ÑÐ´Ð¾Ñ‡ÐµÐ½Ð½Ñ‹Ðµ ÑƒÐ·Ð»Ñ‹: ";
         t.display();
         std::cout << std::endl;
         break;
@@ -67,6 +67,6 @@ void menu(int command, int i, Tree &t) {
     case EXIT:
         exit(0);
     default:
-        std::cout << "Íå ïðàâèëüíîå çíà÷åíèå!!!" << std::endl;
+        std::cout << "ÐÐµ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ!!!" << std::endl;
     }
 }
