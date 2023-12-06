@@ -173,7 +173,7 @@ void Tree::remove(int x) {
 
 void Tree::display() {
     if (root == nullptr) {
-        std::cout << "Ïóñòî" << std::endl;
+        std::cout << "ÐŸÑƒÑÑ‚Ð¾" << std::endl;
     }
 
     inorder(root);
@@ -190,5 +190,5 @@ bool Tree::find(int x) {
 
 void Tree::del() {
     makeEmpty(root);
-    std::cout << "Óäàëåíèå âñåõ óçëîâ." << std::endl;
+    std::cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð²ÑÐµÑ… ÑƒÐ·Ð»Ð¾Ð²." << std::endl;
 }
