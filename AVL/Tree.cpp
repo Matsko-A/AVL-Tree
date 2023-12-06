@@ -1,13 +1,5 @@
 #include "Tree.h"
 
-void Tree::makeEmpty(Node* t) {
-    if (t == nullptr)
-        return;
-    makeEmpty(t->left);
-    makeEmpty(t->right);
-    delete t;
-}
-
 Node* Tree::insert(int x, Node* t) {
     if (t == nullptr) {
         t = new Node;
@@ -155,7 +147,7 @@ void Tree::inorder(Node* t) {
     if (t == nullptr)
         return;
     inorder(t->left);
-    std::cout << t->data << " ";
+    std::cout << t << " ";
     inorder(t->right);
 }
 
@@ -172,10 +164,6 @@ void Tree::remove(int x) {
 }
 
 void Tree::display() {
-    if (root == nullptr) {
-        std::cout << "Пусто" << std::endl;
-    }
-
     inorder(root);
     std::cout << std::endl;
 }
@@ -188,7 +176,8 @@ bool Tree::find(int x) {
     return root;
 }*/
 
-void Tree::del() {
-    makeEmpty(root);
-    std::cout << "Удаление всех узлов." << std::endl;
+std::ostream& operator<<(std::ostream& os, const Node& node) {
+    if (node.data == 0)
+        return os << "Пусто";
+    return os << node.data << " ";
 }

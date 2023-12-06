@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iterator>
 #include <cstddef>
+#include <ostream>
 #include "Node.h"
 //#include "Iterator.h"
 
@@ -11,7 +12,7 @@ class Tree {
 private:
     Node* root;
 
-    void makeEmpty(Node* t);
+    //void makeEmpty(Node* t);
     Node* insert(int x, Node* t);
     Node* singleRightRotate(Node*& t);
     Node* singleLeftRotate(Node*& t);
@@ -24,6 +25,7 @@ private:
     int height(Node* t);
     int getBalance(Node* t);
     void inorder(Node* t);
+    friend std::ostream& operator<< (std::ostream& os, const Node& node);
 
 public:
     //Iterator begin() noexcept { return Iterator(findMin(root)); }

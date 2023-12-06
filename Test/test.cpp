@@ -21,14 +21,3 @@ TEST(test, RemoveTest) {
 
 	ASSERT_FALSE(t.find(3));
 }
-
-TEST(test, DeleteTest) {
-	Tree t;
-	t.insert(3);
-	t.insert(6);
-	t.insert(12);
-	t.insert(1);
-	t.del();
-
-	ASSERT_EQ(nullptr, t.getRoot());
-}
