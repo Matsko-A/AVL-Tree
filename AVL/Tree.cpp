@@ -1,12 +1,8 @@
 #include "Tree.h"
 
 Node* Tree::insert(int x, Node* t) {
-    if (t == nullptr) {
-        t = new Node;
-        t->data = x;
-        t->height = 0;
-        t->left = t->right = nullptr;
-    }
+    if (t == nullptr) 
+        t = new Node(x);
     else if (x < t->data) {
         t->left = insert(x, t->left);
         if (height(t->left) - height(t->right) == 2) {
@@ -123,9 +119,8 @@ Node* Tree::remove(int x, Node* t) {
 bool Tree::find(int x, Node* t) {
     if (t == nullptr)
         return false;
-    else if (x == t->data) {
+    else if (x == t->data)
         return true;
-    }
     else if (x <= t->data)
         find(x, root->left);
     else
@@ -143,11 +138,11 @@ int Tree::getBalance(Node* t) {
         return height(t->left) - height(t->right);
 }
 
-void Tree::inorder(Node* t) {
+std::string Tree::inorder(Node* t) {
     if (t == nullptr)
         return;
     inorder(t->left);
-    std::cout << t << " ";
+    std::string str = std::to_string(t->data) + " ";
     inorder(t->right);
 }
 
@@ -164,8 +159,7 @@ void Tree::remove(int x) {
 }
 
 void Tree::display() {
-    inorder(root);
-    std::cout << std::endl;
+    std::cout << inorder(root);
 }
 
 bool Tree::find(int x) {
@@ -176,8 +170,8 @@ bool Tree::find(int x) {
     return root;
 }*/
 
-std::ostream& operator<<(std::ostream& os, const Node& node) {
-    if (node.data == 0)
-        return os << "Пусто";
-    return os << node.data << " ";
-}
+//std::ostream& operator<<(std::ostream& os, const Node& node) {
+//    if (node.data == 0)
+//        return os << "Пусто";
+//    return os << node.data << " ";
+//}

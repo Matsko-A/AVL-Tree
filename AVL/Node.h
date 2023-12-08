@@ -6,6 +6,5 @@ struct Node {
     Node* right;
     Node* parent;
     int height;
-    Node();
     Node(int data);
 };

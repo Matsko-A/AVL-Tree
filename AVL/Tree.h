@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iterator>
 #include <cstddef>
+#include <string>
 #include <ostream>
 #include "Node.h"
 //#include "Iterator.h"
@@ -24,7 +25,7 @@ private:
     bool find(int x, Node* t);
     int height(Node* t);
     int getBalance(Node* t);
-    void inorder(Node* t);
+    std::string inorder(Node* t);
     friend std::ostream& operator<< (std::ostream& os, const Node& node);
 
 public:
