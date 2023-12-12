@@ -1,10 +1,11 @@
 #pragma once
 
+template<typename T>
 struct Node {
-    int data;
-    Node* left;
-    Node* right;
-    Node* parent;
+    T data;
+    Node<T>* left;
+    Node<T>* right;
+    Node<T>* parent;
     int height;
-    Node(int data);
+    Node(T data) : data(data), left(nullptr), right(nullptr), parent(nullptr), height(0) {};
 };
