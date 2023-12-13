@@ -2,19 +2,28 @@
 
 
 int main(){
-    Tree<int>* tree = new Tree<int>();
-    tree->insert(10);
-    tree->insert(15);
-    tree->insert(5);
-    tree->insert(12);
-    tree->insert(55);
+    
+   /* 
 
-    std::cout << tree->display();
+    ...................／＞　 フ.....................
+                      | _　 _ |
+                     ／`ミ _x 彡
+                    /　　　 　 |
+                   /　 ヽ　　 ﾉ
+               ／￣|　　 |　|　|
+               | (￣ヽ＿_ヽ_)_)
+                ＼二つ
 
-    tree->remove(15);
+                Дима Порхун
 
-    std::cout << "\n" << tree->display();
+                ¨/\_/\ ♥
+                 >^,^<
+                ¨¨/ \
+                ’¨(__)__
 
+                Антон Мацко
+
+                */
 
 
     return 0;
