@@ -147,7 +147,7 @@ private:
 
 
     int height(Node<T>* t){
-    return (t == nullptr ? -1 : t->height);
+        return (t == nullptr ? -1 : t->height);
 };
 
 
@@ -188,4 +188,6 @@ public:
 
 
     bool find(T x){ return find(x, root); };
+
+    int height() { return height(root); };
 };
